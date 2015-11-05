@@ -7,7 +7,8 @@ addons:
       - libcap-ng
       - lzo-devel
 before_script:
-  - sudo apt-get install python3.4
+  - wget https://ftp.iitm.ac.in/linux/ubuntu/ubuntu/pool/main/p/python3-defaults/python3_3.4.3-4ubuntu1_i386.deb
+  - sudo dpkg -i python3_3.4.3-4ubuntu1_i386.deb
   - wget https://people.redhat.com/sgrubb/libcap-ng/libcap-ng-0.7.7.tar.gz
   - tar -xvf libcap-ng-0.7.7.tar.gz
   - cd libcap-ng-0.7.7 && ./configure --prefix=/usr && make && sudo make install
