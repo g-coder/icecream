@@ -14,5 +14,5 @@ before_script:
 before_script:
   - wget https://launchpad.net/ubuntu/+archive/primary/+files/lzo2_2.06.orig.tar.gz
   - tar -xvf lzo2_2.06.orig.tar.gz
-  - cd lzo2_2.06.orig && ./configure --prefix=/usr && make && sudo make install
+  - cd lzo-2.06 && ./configure --prefix=/usr && make && sudo make install
 script: ./autogen.sh && ./configure && make && make check
