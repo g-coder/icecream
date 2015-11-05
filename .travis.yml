@@ -1,0 +1,9 @@
+language: cpp
+compiler:
+  - g++
+addons:
+  apt:
+    packages:
+      - libcap-ng
+      - lzo-devel
+script: ./autogen.sh && ./configure && make && make check
