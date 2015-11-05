@@ -15,4 +15,4 @@ before_script:
   - tar -xvf lzo2_2.06.orig.tar.gz
   - cd lzo-2.06 && ./configure --prefix=/usr && make && sudo make install
   - cd ..
-script: ./autogen.sh && ./configure && make && make check
+script: ./autogen.sh && ./configure && make
